@@ -1,0 +1,35 @@
+@charset "UTF8";
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'poets';
+    src: url('Poetsenone-Regular.tff')format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'dancig';
+    src: url('DancingScript-VariableFont_wght.ttf')format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'lobstar';
+    src: url('Lobster-Regular.ttf') format(truetype);
+    font-weight: normal;
+}
+:root{
+    --font-padrão:'montserrat','sans-serif';
+    --font-titulo:'poets',cursive;
+    --font-decorativa:'dancig',cursive;
+    --font-teste:'lobstar',cursive;
+}
+
+h1{
+    font-family: var(--font-decorativa);
+}
