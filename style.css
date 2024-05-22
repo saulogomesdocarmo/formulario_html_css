@@ -7,29 +7,83 @@
 }
 
 @font-face {
-    font-family: 'poets';
-    src: url('Poetsenone-Regular.tff')format('truetype');
+    font-family: 'bebas';
+    src: url('BebasNeue-Regular.ttf') format('truetype');
     font-weight: normal;
 }
 
-@font-face {
-    font-family: 'dancig';
-    src: url('DancingScript-VariableFont_wght.ttf')format('truetype');
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: 'lobstar';
-    src: url('Lobster-Regular.ttf') format(truetype);
-    font-weight: normal;
-}
 :root{
+
+    --cor01:#E1F4FE;
+    --cor02:#9EC1D5;
+    --cor3:#52798E;
+    --cor4:#346580;
+    --cor5:#153E55;
+    --cor6:#042333;
+    
+    --preto:#000000;
+    --branco:#ffffff;
+
     --font-padrão:'montserrat','sans-serif';
-    --font-titulo:'poets',cursive;
-    --font-decorativa:'dancig',cursive;
-    --font-teste:'lobstar',cursive;
+    --font-titulo:'bebas','sans-serif';
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: var(--font-padrão);
+    font-weight: 600;
+    background-color: var(--cor02);
 }
 
 h1{
-    font-family: var(--font-decorativa);
+    font-family: var(--font-titulo);
+    font-weight: normal;
+    font-size: 2.5em;
+    color:var(--cor6);
+    text-align: center;
+
+    background-color: var(--cor4);
+    margin-bottom: 30px;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
+
+main{
+    min-width: 300px;
+    max-width: 500px;
+    min-height: 500px;
+    max-height: 5000px;
+    
+    background-color: var(--cor01);
+    margin: auto;
+    margin-top: 100px;
+    
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px ;
+
+
+
+}
+
+main > label{
+    display: block;
+    text-align: center;
+    text-transform: lowercase;
+    
+}
+
+main > input{
+   display: block;
+   margin: auto;
+   outline: none;
+
+   border: none;
+} 
+
+
+
